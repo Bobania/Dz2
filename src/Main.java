@@ -65,6 +65,7 @@ public class Main {
         System.out.println("\nКниги после 2000 года");
 
 
+
                 students.stream()
                         .flatMap(student -> student.getBooks().stream())
                         .filter(book -> book.getYear() >= 2000)
